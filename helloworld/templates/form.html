@@ -1,0 +1,15 @@
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>django-form</title>
+</head>
+<body>
+    <form method="post" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form%}
+        {% bootstrap_button button_type='submit' content='提交' %}
+    </form>
+</body>
+</html>
